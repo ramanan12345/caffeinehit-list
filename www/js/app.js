@@ -1,5 +1,6 @@
 var app = angular.module('caffeinehit', [
 	'ionic',
+	'ngCordova',
 	'caffeinehit.controllers',
 	'caffeinehit.services',
 	'caffeinehit.filters'
@@ -14,10 +15,10 @@ app.run(function ($ionicPlatform) {
 			cordova.plugins.Keyboard.disableScroll(true);
 
 		}
-		if (window.StatusBar) {
-			// org.apache.cordova.statusbar required
-			StatusBar.styleDarkContent();
-		}
+		// if (window.StatusBar) {
+		// 	// org.apache.cordova.statusbar required
+		// 	StatusBar.styleDarkContent();
+		// }
 	});
 });
 
